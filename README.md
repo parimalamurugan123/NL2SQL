@@ -31,26 +31,26 @@ MySQL Server
 
 nl2sql.csv with question and querry columns
 
-1. Clone the Repository
+## 1. Clone the Repository
 bash
 Copy
 Edit
 git clone https://github.com/parimalamurugan123/nl2sql-api.git
 cd nl2sql-api
-2. Create a Virtual Environment and Install Dependencies
+## 2. Create a Virtual Environment and Install Dependencies
 bash
 Copy
 Edit
 python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
-3. Configure Database Connection
+## 3. Configure Database Connection
 Add your database credentials either directly in app.py or via a .env file:
 
 bash
 Copy
 Edit
-# .env (not committed to Git)
+## .env (not committed to Git)
 MYSQL_HOST=localhost
 MYSQL_USER=root
 MYSQL_PASSWORD=Parimala&2004
