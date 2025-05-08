@@ -1,0 +1,484 @@
+Unnamed: 0,question,querry
+0,Show all employees in the IT department.,SELECT * FROM employees WHERE department = 'IT';
+1,What is the average salary in the HR team?,SELECT AVG(salary) FROM employees WHERE department = 'HR';
+2,List names of employees older than 30.,SELECT name FROM employees WHERE age > 30;
+3,Count how many employees are in Finance.,SELECT COUNT(*) FROM employees WHERE department = 'Finance';
+4,Show the employee with the highest salary.,SELECT * FROM employees ORDER BY salary DESC LIMIT 1;
+5,List employees earning more than 25000.,SELECT * FROM employees WHERE salary > 25000;
+6,What is the total salary of all employees?,SELECT SUM(salary) FROM employees;
+7,List all departments with employees.,SELECT DISTINCT department FROM employees;
+8,Who is the youngest employee?,SELECT * FROM employees ORDER BY age ASC LIMIT 1;
+9,Show names and departments of employees.,"SELECT name, department FROM employees;"
+10,List the employees in the IT department whose salary is greater than 20000.,SELECT * FROM employees WHERE department = 'IT' AND salary > 20000;
+11,Show the names and salaries of employees who are younger than 28.,"SELECT name, salary FROM employees WHERE age < 28;"
+12,What is the average age of employees in Marketing?,SELECT AVG(age) FROM employees WHERE department = 'Marketing';
+13,Find employees with a salary between 20000 and 30000.,SELECT * FROM employees WHERE salary BETWEEN 20000 AND 30000;
+14,Show employees from the HR department with a salary greater than 20000.,SELECT * FROM employees WHERE department = 'HR' AND salary > 20000;
+15,How many employees are there in the IT department?,SELECT COUNT(*) FROM employees WHERE department = 'IT';
+16,List all employees' names and ages who are above 30 years old.,"SELECT name, age FROM employees WHERE age > 30;"
+17,Show employees in the Marketing department ordered by salary in ascending order.,SELECT * FROM employees WHERE department = 'Marketing' ORDER BY salary ASC;
+18,Find the employee(s) with the lowest salary.,SELECT * FROM employees ORDER BY salary ASC LIMIT 1;
+19,Show the department and average salary of each department.,"SELECT department, AVG(salary) FROM employees GROUP BY department;"
+20,List all employees' names who have a salary below 20000.,SELECT name FROM employees WHERE salary < 20000;
+21,Show the employee(s) with the lowest salary.,SELECT * FROM employees WHERE salary = (SELECT MIN(salary) FROM employees);
+22,Show the names and salaries of employees who are younger than 28.,"SELECT name, salary FROM employees WHERE age < 28;"
+23,What is the average age of employees in Marketing?,SELECT AVG(age) FROM employees WHERE department = 'Marketing';
+24,Find employees with a salary between 20000 and 30000.,SELECT * FROM employees WHERE salary BETWEEN 20000 AND 30000;
+25,Show employees from the HR department with a salary greater than 20000.,SELECT * FROM employees WHERE department = 'HR' AND salary > 20000;
+26,How many employees are there in the IT department?,SELECT COUNT(*) FROM employees WHERE department = 'IT';
+27,List all employees' names and ages who are above 30 years old.,"SELECT name, age FROM employees WHERE age > 30;"
+28,Show employees in the Marketing department ordered by salary in ascending order.,SELECT * FROM employees WHERE department = 'Marketing' ORDER BY salary ASC;
+29,Find the employee(s) with the lowest salary.,SELECT * FROM employees ORDER BY salary ASC LIMIT 1;
+30,Show the department and average salary of each department.,"SELECT department, AVG(salary) FROM employees GROUP BY department;"
+31,List all employees' names who have a salary below 20000.,SELECT name FROM employees WHERE salary < 20000;
+,,
+,Show all employees in the HR department.,SELECT * FROM employees WHERE department = 'HR';
+,What is the average salary in the IT department?,SELECT AVG(salary) FROM employees WHERE department = 'IT';
+,List names of employees earning more than 20000.,SELECT name FROM employees WHERE salary > 20000;
+,Count how many employees are in Finance.,SELECT COUNT(*) FROM employees WHERE department = 'Finance';
+,Show the employee with the highest salary.,SELECT * FROM employees ORDER BY salary DESC LIMIT 1;
+,List all employees' names and ages.,"SELECT name, age FROM employees;"
+,What is the average age of employees in Marketing?,SELECT AVG(age) FROM employees WHERE department = 'Marketing';
+,List employees with salary between 20000 and 30000.,SELECT * FROM employees WHERE salary BETWEEN 20000 AND 30000;
+,Show employees from the HR department with a salary above 15000.,SELECT * FROM employees WHERE department = 'HR' AND salary > 15000;
+,How many employees are there in the IT department?,SELECT COUNT(*) FROM employees WHERE department = 'IT';
+,Find employees with a salary between 18000 and 25000.,SELECT * FROM employees WHERE salary BETWEEN 18000 AND 25000;
+,Show the names and salaries of employees who are older than 28.,"SELECT name, salary FROM employees WHERE age > 28;"
+,List employees from Finance department earning more than 20000.,SELECT * FROM employees WHERE department = 'Finance' AND salary > 20000;
+,Show the department and average salary of each department.,"SELECT department, AVG(salary) FROM employees GROUP BY department;"
+,Show names of employees who are older than 30.,SELECT name FROM employees WHERE age > 30;
+,,
+,Show all employees in the Marketing department.,SELECT * FROM employees WHERE department = 'Marketing';
+,What is the total salary of all employees?,SELECT SUM(salary) FROM employees;
+,List employees who are younger than 25.,SELECT * FROM employees WHERE age < 25;
+,Show employees with a salary above 30000.,SELECT * FROM employees WHERE salary > 30000;
+,List employees who are older than 30 and earn more than 20000.,SELECT * FROM employees WHERE age > 30 AND salary > 20000;
+,Show names of employees who work in both HR and IT departments.,"SELECT name FROM employees WHERE department IN ('HR', 'IT');"
+,Find the employee with the lowest salary.,SELECT * FROM employees ORDER BY salary ASC LIMIT 1;
+,List all employees who have a salary between 15000 and 25000.,SELECT * FROM employees WHERE salary BETWEEN 15000 AND 25000;
+,Show employees in the IT department with salaries less than 30000.,SELECT * FROM employees WHERE department = 'IT' AND salary < 30000;
+,How many employees have a salary above 20000?,SELECT COUNT(*) FROM employees WHERE salary > 20000;
+,List names of employees who are in the HR department and older than 25.,SELECT name FROM employees WHERE department = 'HR' AND age > 25;
+,Show employees who are not in the Finance department.,SELECT * FROM employees WHERE department != 'Finance';
+,Find the employee with the highest salary in the IT department.,SELECT * FROM employees WHERE department = 'IT' ORDER BY salary DESC LIMIT 1;
+,List all unique departments in the company.,SELECT DISTINCT department FROM employees;
+,Show names and salaries of employees who are younger than 30.,"SELECT name, salary FROM employees WHERE age < 30;"
+,Show the names of employees who have a salary of 25000.,SELECT name FROM employees WHERE salary = 25000;
+,Show employees in the HR department with a salary less than 20000.,SELECT * FROM employees WHERE department = 'HR' AND salary < 20000;
+,Count how many employees are older than 25 in the IT department.,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND age > 25;
+,List the department with the highest average salary.,SELECT department FROM employees GROUP BY department ORDER BY AVG(salary) DESC LIMIT 1;
+,Show the total salary of employees in the Marketing department.,SELECT SUM(salary) FROM employees WHERE department = 'Marketing';
+,,
+,Display all workers from the Marketing department.,SELECT * FROM employees WHERE department = 'Marketing';
+,What is the combined salary of all employees in the company?,SELECT SUM(salary) FROM employees;
+,List all employees younger than 25 years old.,SELECT * FROM employees WHERE age < 25;
+,Show employees who earn above 30000.,SELECT * FROM employees WHERE salary > 30000;
+,List employees over 30 years of age with salaries above 20000.,SELECT * FROM employees WHERE age > 30 AND salary > 20000;
+,Show employees working in both the HR and IT departments.,"SELECT name FROM employees WHERE department IN ('HR', 'IT');"
+,Identify the employee with the lowest pay.,SELECT * FROM employees ORDER BY salary ASC LIMIT 1;
+,Display employees whose salary is between 15000 and 25000.,SELECT * FROM employees WHERE salary BETWEEN 15000 AND 25000;
+,Show employees in the IT department with a salary below 30000.,SELECT * FROM employees WHERE department = 'IT' AND salary < 30000;
+,How many employees earn more than 20000?,SELECT COUNT(*) FROM employees WHERE salary > 20000;
+,Show names of HR employees who are over 25 years old.,SELECT name FROM employees WHERE department = 'HR' AND age > 25;
+,Display employees who are not part of the Finance team.,SELECT * FROM employees WHERE department != 'Finance';
+,Find the highest-paid employee in the IT department.,SELECT * FROM employees WHERE department = 'IT' ORDER BY salary DESC LIMIT 1;
+,List the different departments within the organization.,SELECT DISTINCT department FROM employees;
+,Show employees younger than 30 with their salary details.,"SELECT name, salary FROM employees WHERE age < 30;"
+,Retrieve the names of employees who earn exactly 25000.,SELECT name FROM employees WHERE salary = 25000;
+,Display employees from the HR department earning less than 20000.,SELECT * FROM employees WHERE department = 'HR' AND salary < 20000;
+,Count how many workers over 25 are in the IT department.,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND age > 25;
+,Show the department with the highest average salary.,SELECT department FROM employees GROUP BY department ORDER BY AVG(salary) DESC LIMIT 1;
+,Calculate the total salary of those working in Marketing.,SELECT SUM(salary) FROM employees WHERE department = 'Marketing';
+,,
+,List all employees with a salary greater than 15000.,SELECT * FROM employees WHERE salary > 15000;
+,Show employees who are at least 30 years old.,SELECT * FROM employees WHERE age >= 30;
+,Which employees are working in the Marketing department with a salary greater than 25000?,SELECT * FROM employees WHERE department = 'Marketing' AND salary > 25000;
+,How many employees work in the HR department?,SELECT COUNT(*) FROM employees WHERE department = 'HR';
+,Show the names of employees who are under 25 years old.,SELECT name FROM employees WHERE age < 25;
+,Which department has the highest total salary?,SELECT department FROM employees GROUP BY department ORDER BY SUM(salary) DESC LIMIT 1;
+,Find employees whose salary is exactly 22000.,SELECT * FROM employees WHERE salary = 22000;
+,List the names and ages of employees older than 25.,"SELECT name, age FROM employees WHERE age > 25;"
+,Who is the oldest employee?,SELECT * FROM employees ORDER BY age DESC LIMIT 1;
+,List employees who work in the IT department and earn more than 25000.,SELECT * FROM employees WHERE department = 'IT' AND salary > 25000;
+,Show employees who earn more than 20000 and are in the Finance department.,SELECT * FROM employees WHERE department = 'Finance' AND salary > 20000;
+,Which employees have a salary below 15000?,SELECT * FROM employees WHERE salary < 15000;
+,Find employees in the IT department who earn more than 25000.,SELECT * FROM employees WHERE department = 'IT' AND salary > 25000;
+,List all employees whose age is between 25 and 30.,SELECT * FROM employees WHERE age BETWEEN 25 AND 30;
+,What is the average salary in the Marketing department?,SELECT AVG(salary) FROM employees WHERE department = 'Marketing';
+,Find the employee with the highest age.,SELECT * FROM employees ORDER BY age DESC LIMIT 1;
+,Show employees whose name starts with 'A'.,SELECT * FROM employees WHERE name LIKE 'A%';
+,Find employees in the HR department who earn less than 25000.,SELECT * FROM employees WHERE department = 'HR' AND salary < 25000;
+,List employees who earn between 18000 and 30000.,SELECT * FROM employees WHERE salary BETWEEN 18000 AND 30000;
+,Which employees have a salary higher than the average salary?,SELECT * FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);
+,Show all employees' names and salaries.,"SELECT name, salary FROM employees;"
+,List all employees who work in the Finance or Marketing departments.,"SELECT * FROM employees WHERE department IN ('Finance', 'Marketing');"
+,Show the average age of employees in the IT department.,SELECT AVG(age) FROM employees WHERE department = 'IT';
+,How many employees are there in the Marketing department?,SELECT COUNT(*) FROM employees WHERE department = 'Marketing';
+,List the employees in the HR department who are above 30.,SELECT * FROM employees WHERE department = 'HR' AND age > 30;
+,Find employees with the highest salary in the company.,SELECT * FROM employees ORDER BY salary DESC LIMIT 1;
+,Show employees who earn between 20000 and 30000.,SELECT * FROM employees WHERE salary BETWEEN 20000 AND 30000;
+,Display the names of employees who have a salary under 20000.,SELECT name FROM employees WHERE salary < 20000;
+,Find employees whose age is greater than 40.,SELECT * FROM employees WHERE age > 40;
+,Show employees who have a salary between 15000 and 30000.,SELECT * FROM employees WHERE salary BETWEEN 15000 AND 30000;
+,How many employees work in the Finance and Marketing departments?,"SELECT COUNT(*) FROM employees WHERE department IN ('Finance', 'Marketing');"
+,Show employees working in departments other than IT and HR.,"SELECT * FROM employees WHERE department NOT IN ('IT', 'HR');"
+,List employees whose salary is between 25000 and 35000.,SELECT * FROM employees WHERE salary BETWEEN 25000 AND 35000;
+,What is the minimum salary of employees in the IT department?,SELECT MIN(salary) FROM employees WHERE department = 'IT';
+,Find employees in the Finance department with a salary above 22000.,SELECT * FROM employees WHERE department = 'Finance' AND salary > 22000;
+,List all employees working in the Marketing department.,SELECT * FROM employees WHERE department = 'Marketing';
+,Show employees who are older than 30 and earn less than 20000.,SELECT * FROM employees WHERE age > 30 AND salary < 20000;
+,Find employees whose name ends with 'a'.,SELECT * FROM employees WHERE name LIKE '%a';
+,Display the employees in the HR department with a salary greater than 18000.,SELECT * FROM employees WHERE department = 'HR' AND salary > 18000;
+,Show the average salary of employees working in the IT department.,SELECT AVG(salary) FROM employees WHERE department = 'IT';
+,List employees who earn between 10000 and 20000.,SELECT * FROM employees WHERE salary BETWEEN 10000 AND 20000;
+,How many employees are there in the IT department with salaries above 20000?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND salary > 20000;
+,List all employees who work in the Marketing or HR departments.,"SELECT * FROM employees WHERE department IN ('Marketing', 'HR');"
+,Display employees who have a salary greater than the average salary of HR department.,SELECT * FROM employees WHERE salary > (SELECT AVG(salary) FROM employees WHERE department = 'HR');
+,Find the employees who are not in the HR department.,SELECT * FROM employees WHERE department != 'HR';
+,Show the departments and their corresponding average salary.,"SELECT department, AVG(salary) FROM employees GROUP BY department;"
+,Count the number of employees who earn less than 15000.,SELECT COUNT(*) FROM employees WHERE salary < 15000;
+,List employees who have been with the company for more than 5 years.,"SELECT * FROM employees WHERE DATEDIFF(CURDATE(), hire_date) > 1825;"
+,Find employees whose department is HR or Marketing and are under 30 years old.,"SELECT * FROM employees WHERE department IN ('HR', 'Marketing') AND age < 30;"
+,List employees who have a salary greater than 27000 but less than 35000.,SELECT * FROM employees WHERE salary BETWEEN 27000 AND 35000;
+,Show the department with the lowest average salary.,SELECT department FROM employees GROUP BY department ORDER BY AVG(salary) ASC LIMIT 1;
+,Display the oldest employee in the company.,SELECT * FROM employees ORDER BY age DESC LIMIT 1;
+,Find employees who are in the Marketing or Finance departments but earn less than 25000.,"SELECT * FROM employees WHERE department IN ('Marketing', 'Finance') AND salary < 25000;"
+,Show employees who have been in the company for over 10 years.,"SELECT * FROM employees WHERE DATEDIFF(CURDATE(), hire_date) > 3650;"
+,Display the employee with the second highest salary.,SELECT * FROM employees ORDER BY salary DESC LIMIT 1 OFFSET 1;
+,List all employees whose salary is exactly 20000.,SELECT * FROM employees WHERE salary = 20000;
+,Find employees who have been with the company for less than 2 years.,"SELECT * FROM employees WHERE DATEDIFF(CURDATE(), hire_date) < 730;"
+,Count how many employees earn less than the average salary.,SELECT COUNT(*) FROM employees WHERE salary < (SELECT AVG(salary) FROM employees);
+,Show employees who have worked for the company for exactly 5 years.,"SELECT * FROM employees WHERE DATEDIFF(CURDATE(), hire_date) = 1825;"
+,Find all employees in the IT department who earn more than 28000,SELECT name FROM employees WHERE department = 'IT' AND salary > 28000;
+,List all employees with a salary greater than 15000.,SELECT * FROM employees WHERE salary > 15000;
+,Show employees who are at least 30 years old.,SELECT * FROM employees WHERE age >= 30;
+,Which employees are working in the Marketing department with a salary greater than 25000?,SELECT * FROM employees WHERE department = 'Marketing' AND salary > 25000;
+,Find employees working in the HR department with a salary less than 20000.,SELECT * FROM employees WHERE department = 'HR' AND salary < 20000;
+,Show the names of employees who are older than 25.,SELECT name FROM employees WHERE age > 25;
+,How many employees are there in the IT department?,SELECT COUNT(*) FROM employees WHERE department = 'IT';
+,List employees who earn more than 20000 but are under 30 years old.,SELECT * FROM employees WHERE salary > 20000 AND age < 30;
+,Which employees are in the Finance department and earn a salary greater than 20000?,SELECT * FROM employees WHERE department = 'Finance' AND salary > 20000;
+,Show employees who have a salary between 18000 and 25000.,SELECT * FROM employees WHERE salary BETWEEN 18000 AND 25000;
+,List the names and salaries of employees in the IT department.,"SELECT name, salary FROM employees WHERE department = 'IT';"
+,Show the employee with the highest salary.,SELECT * FROM employees ORDER BY salary DESC LIMIT 1;
+,Find the employee(s) with the lowest salary.,SELECT * FROM employees ORDER BY salary ASC LIMIT 1;
+,How many employees are there in the Finance department who are under 30 years old?,SELECT COUNT(*) FROM employees WHERE department = 'Finance' AND age < 30;
+,Show the department and salary of employees who are older than 28.,"SELECT department, salary FROM employees WHERE age > 28;"
+,List the employees who have a salary greater than the average salary of the company.,SELECT * FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);
+,Find employees in the HR department whose salary is less than the average salary.,SELECT * FROM employees WHERE department = 'HR' AND salary < (SELECT AVG(salary) FROM employees);
+,Show all employees whose salary is between 20000 and 30000.,SELECT * FROM employees WHERE salary BETWEEN 20000 AND 30000;
+,Who is the youngest employee in the company?,SELECT * FROM employees ORDER BY age ASC LIMIT 1;
+,Show employees who work in the Marketing department and earn more than 25000.,SELECT * FROM employees WHERE department = 'Marketing' AND salary > 25000;
+,Find the employee(s) who are younger than 30 and have a salary less than 20000.,SELECT * FROM employees WHERE age < 30 AND salary < 20000;
+,List all employees from the HR department.,SELECT * FROM employees WHERE department = 'HR';
+,Show the names of employees who are older than 28.,SELECT name FROM employees WHERE age > 28;
+,How many employees are in the IT department with a salary greater than 25000?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND salary > 25000;
+,Show the average salary of employees in the Finance department.,SELECT AVG(salary) FROM employees WHERE department = 'Finance';
+,List all employees whose salary is less than 22000.,SELECT * FROM employees WHERE salary < 22000;
+,Find employees who are older than 30 and have a salary greater than 20000.,SELECT * FROM employees WHERE age > 30 AND salary > 20000;
+,Show the employees in the IT department who earn more than 25000.,SELECT * FROM employees WHERE department = 'IT' AND salary > 25000;
+,Find the employee(s) with the highest salary in the HR department.,SELECT * FROM employees WHERE department = 'HR' ORDER BY salary DESC LIMIT 1;
+,Show the department and average salary of each department.,"SELECT department, AVG(salary) FROM employees GROUP BY department;"
+,How many employees have a salary below the average salary of the company?,SELECT COUNT(*) FROM employees WHERE salary < (SELECT AVG(salary) FROM employees);
+,List the names and departments of employees who earn more than 22000.,"SELECT name, department FROM employees WHERE salary > 22000;"
+,Find the employees who work in the Finance department and are above 30 years old.,SELECT * FROM employees WHERE department = 'Finance' AND age > 30;
+,How many employees in the IT department are younger than 30?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND age < 30;
+,Find the total number of employees in the company.,SELECT COUNT(*) FROM employees;
+,How many employees have a salary below the average salary of the company?,SELECT COUNT(*) FROM employees WHERE salary < (SELECT AVG(salary) FROM employees);
+,List the names and departments of employees who earn more than 22000.,"SELECT name, department FROM employees WHERE salary > 22000;"
+,How many employees are in the Marketing department?,SELECT COUNT(*) FROM employees WHERE department = 'Marketing';
+,Find the employee with the highest salary in the IT department.,SELECT * FROM employees WHERE department = 'IT' ORDER BY salary DESC LIMIT 1;
+,List the names of employees whose age is below 30.,SELECT name FROM employees WHERE age < 30;
+,Which department has the highest average salary?,"SELECT department, AVG(salary) FROM employees GROUP BY department ORDER BY AVG(salary) DESC LIMIT 1;"
+,How many employees are there in the Finance department with a salary greater than 20000?,SELECT COUNT(*) FROM employees WHERE department = 'Finance' AND salary > 20000;
+,Find all employees who are older than 30 and earn more than 25000.,SELECT name FROM employees WHERE age > 30 AND salary > 25000;
+,Which employees are earning less than 18000 and are younger than 30?,SELECT name FROM employees WHERE salary < 18000 AND age < 30;
+,Show the names of employees in the HR department with a salary above 22000.,SELECT name FROM employees WHERE department = 'HR' AND salary > 22000;
+,How many employees have a salary between 20000 and 25000?,SELECT COUNT(*) FROM employees WHERE salary BETWEEN 20000 AND 25000;
+,List the employees whose age is greater than 28 and salary is greater than 25000.,SELECT name FROM employees WHERE age > 28 AND salary > 25000;
+,Show all employees who are older than 30.,SELECT name FROM employees WHERE age > 30;
+,List the names of employees working in the IT department with a salary above 25000.,SELECT name FROM employees WHERE department = 'IT' AND salary > 25000;
+,What is the average salary in the company?,SELECT AVG(salary) FROM employees;
+,Show the employees with the lowest salary in the Marketing department.,SELECT * FROM employees WHERE department = 'Marketing' ORDER BY salary ASC LIMIT 1;
+,Find the names of employees who work in Finance and earn more than 20000.,SELECT name FROM employees WHERE department = 'Finance' AND salary > 20000;
+,How many employees are there in the HR department with a salary greater than 15000?,SELECT COUNT(*) FROM employees WHERE department = 'HR' AND salary > 15000;
+,List the names and salaries of employees earning less than 20000.,"SELECT name, salary FROM employees WHERE salary < 20000;"
+,Find the department with the most employees.,"SELECT department, COUNT(*) FROM employees GROUP BY department ORDER BY COUNT(*) DESC LIMIT 1;"
+,Show the name and salary of the highest-paid employee,"SELECT name, salary FROM employees ORDER BY salary DESC LIMIT 1;"
+,List all employees who are older than 25 but earn less than 25000.,SELECT name FROM employees WHERE age > 25 AND salary < 25000;
+,Find the total salary paid to employees in the HR department.,SELECT SUM(salary) FROM employees WHERE department = 'HR';
+,Which department has the lowest average salary?,"SELECT department, AVG(salary) FROM employees GROUP BY department ORDER BY AVG(salary) ASC LIMIT 1;"
+,How many employees in the IT department earn more than 28000?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND salary > 28000;
+,List employees who are under 30 and belong to the IT department.,SELECT name FROM employees WHERE age < 30 AND department = 'IT';
+,Find employees whose name starts with 'D'.,SELECT name FROM employees WHERE name LIKE 'D%';
+,Which employee has the highest salary in the company?,SELECT * FROM employees ORDER BY salary DESC LIMIT 1;
+,What is the total salary paid to employees aged above 30?,SELECT SUM(salary) FROM employees WHERE age > 30;
+,Find all employees in the HR department earning less than 18000.,SELECT name FROM employees WHERE department = 'HR' AND salary < 18000;
+,List the names and salaries of employees in the Finance department.,"SELECT name, salary FROM employees WHERE department = 'Finance';"
+,Find the average salary for employees in the Marketing department.,SELECT AVG(salary) FROM employees WHERE department = 'Marketing';
+,How many employees are aged between 25 and 30?,SELECT COUNT(*) FROM employees WHERE age BETWEEN 25 AND 30;
+,List the names of employees whose salary is greater than or equal to 25000.,SELECT name FROM employees WHERE salary >= 25000;
+,Show the details of employees who are in the IT or HR department.,"SELECT * FROM employees WHERE department IN ('IT', 'HR');"
+,What is the total number of employees in the company?,SELECT COUNT(*) FROM employees;
+,Show all employees who are younger than 30 and belong to the HR department.,SELECT name FROM employees WHERE age < 30 AND department = 'HR';
+,Find employees whose salary is exactly 25000.,SELECT * FROM employees WHERE salary = 25000;
+,List the employees who are older than 28 and belong to the Finance department.,SELECT name FROM employees WHERE age > 28 AND department = 'Finance';
+,How many employees have an age of 30 or more?,SELECT COUNT(*) FROM employees WHERE age >= 30;
+,Find employees who are in the Finance department but earn less than 20000.,SELECT name FROM employees WHERE department = 'Finance' AND salary < 20000;
+,Which department has the most employees under 30?,"SELECT department, COUNT(*) FROM employees WHERE age < 30 GROUP BY department ORDER BY COUNT(*) DESC LIMIT 1;"
+,List the names and departments of employees who have the same salary.,"SELECT name, department FROM employees WHERE salary IN (SELECT salary FROM employees GROUP BY salary HAVING COUNT(*) > 1);"
+,Find the employee with the second highest salary in the company.,SELECT * FROM employees WHERE salary < (SELECT MAX(salary) FROM employees) ORDER BY salary DESC LIMIT 1;
+,Show the names of employees who are older than 25 and younger than 35.,SELECT name FROM employees WHERE age > 25 AND age < 35;
+,List all employees in the Marketing department who are older than 25.,SELECT name FROM employees WHERE department = 'Marketing' AND age > 25;
+,How many employees in the company have a salary between 18000 and 25000?,SELECT COUNT(*) FROM employees WHERE salary BETWEEN 18000 AND 25000;
+,Show the names of employees who are older than 30 and earn less than 23000.,SELECT name FROM employees WHERE age > 30 AND salary < 23000;
+,Find the average salary of employees who are younger than 30.,SELECT AVG(salary) FROM employees WHERE age < 30;
+,Which department has the least average salary?,"SELECT department, AVG(salary) FROM employees GROUP BY department ORDER BY AVG(salary) ASC LIMIT 1;"
+,List the names of employees who earn more than the average salary of the company.,SELECT name FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);
+,How many employees work in departments with a salary greater than 20000?,SELECT COUNT(*) FROM employees WHERE salary > 20000;
+,Find the employees whose name contains the letter 'A'.,SELECT name FROM employees WHERE name LIKE '%A%';
+,Show all employees in the IT department who are older than 30.,SELECT name FROM employees WHERE department = 'IT' AND age > 30;
+,Find all employees who are aged 28 or older,SELECT name FROM employees WHERE age >= 28;
+,List all employees who are in the Finance department and earn more than 20000.,SELECT name FROM employees WHERE department = 'Finance' AND salary > 20000;
+,Find employees who are younger than 30 but earn more than 28000.,SELECT name FROM employees WHERE age < 30 AND salary > 28000;
+,Which employee is the youngest in the company?,SELECT * FROM employees ORDER BY age ASC LIMIT 1;
+,What is the average salary for employees in the HR department?,SELECT AVG(salary) FROM employees WHERE department = 'HR';
+,How many employees are in the Marketing department with a salary above 25000?,SELECT COUNT(*) FROM employees WHERE department = 'Marketing' AND salary > 25000;
+,Show the names of employees who have a salary greater than or equal to 30000.,SELECT name FROM employees WHERE salary >= 30000;
+,Which department has the highest average salary?,"SELECT department, AVG(salary) FROM employees GROUP BY department ORDER BY AVG(salary) DESC LIMIT 1;"
+,How many employees in the IT department are aged between 25 and 30?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND age BETWEEN 25 AND 30;
+,Find employees whose age is either 28 or 29.,"SELECT name FROM employees WHERE age IN (28, 29);"
+,Show the names and salaries of employees in the HR or Marketing department.,"SELECT name, salary FROM employees WHERE department IN ('HR', 'Marketing');"
+,How many employees in the company are older than 35?,SELECT COUNT(*) FROM employees WHERE age > 35;
+,List the names of employees who are in the HR department or earn more than 25000.,SELECT name FROM employees WHERE department = 'HR' OR salary > 25000;
+,Find the total number of employees in the Finance department.,SELECT COUNT(*) FROM employees WHERE department = 'Finance';
+,Which employee has the lowest salary in the company?,SELECT * FROM employees ORDER BY salary ASC LIMIT 1;
+,List employees who are older than 30 and earn between 20000 and 25000.,SELECT name FROM employees WHERE age > 30 AND salary BETWEEN 20000 AND 25000;
+,How many employees in the IT department earn more than the average salary of the department?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND salary > (SELECT AVG(salary) FROM employees WHERE department = 'IT');
+,Find employees in the Marketing department whose age is less than 30.,SELECT name FROM employees WHERE department = 'Marketing' AND age < 30;
+,"List the employees who earn the same salary as ""parimala"".",SELECT name FROM employees WHERE salary = (SELECT salary FROM employees WHERE name = 'parimala');
+,How many employees are older than 25 and belong to the IT department?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND age > 25;
+,Find the employee with the highest salary in the HR department.,SELECT * FROM employees WHERE department = 'HR' ORDER BY salary DESC LIMIT 1;
+,List employees whose name starts with 'A' and salary is greater than 20000.,SELECT name FROM employees WHERE name LIKE 'A%' AND salary > 20000;
+,,
+,How many employees are there in the HR department?,SELECT COUNT(*) FROM employees WHERE department = 'HR';
+,Find the employee(s) who earn the highest salary in the company.,SELECT * FROM employees ORDER BY salary DESC LIMIT 1;
+,List the names of employees working in the IT department.,SELECT name FROM employees WHERE department = 'IT';
+,Show the employees in the Marketing department who earn less than 25000.,SELECT name FROM employees WHERE department = 'Marketing' AND salary < 25000;
+,Which employee has the highest salary in the Finance department?,SELECT * FROM employees WHERE department = 'Finance' ORDER BY salary DESC LIMIT 1;
+,Find employees who are older than 28 but earn less than 25000.,SELECT name FROM employees WHERE age > 28 AND salary < 25000;
+,List all employees whose name starts with the letter 'S'.,SELECT name FROM employees WHERE name LIKE 'S%';
+,Show the total salary of all employees in the Marketing department.,SELECT SUM(salary) FROM employees WHERE department = 'Marketing';
+,Find employees who are younger than 30 and earn more than 27000.,SELECT name FROM employees WHERE age < 30 AND salary > 27000;
+,How many employees in the HR department are younger than 25?,SELECT COUNT(*) FROM employees WHERE department = 'HR' AND age < 25;
+,Show employees whose salary is higher than the average salary.,SELECT name FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);
+,List all employees in the IT department who are older than 30.,SELECT name FROM employees WHERE department = 'IT' AND age > 30;
+,Find the average salary in the Finance department.,SELECT AVG(salary) FROM employees WHERE department = 'Finance';
+,How many employees are in the Marketing department earning more than 26000?,SELECT COUNT(*) FROM employees WHERE department = 'Marketing' AND salary > 26000;
+,List employees from the HR department who have a salary between 15000 and 25000.,SELECT name FROM employees WHERE department = 'HR' AND salary BETWEEN 15000 AND 25000;
+,Show the names of employees whose salary is less than 20000.,SELECT name FROM employees WHERE salary < 20000;
+,Find all employees aged between 25 and 30 who are in the IT department.,SELECT name FROM employees WHERE department = 'IT' AND age BETWEEN 25 AND 30;
+,Show the names of all employees whose department is Finance.,SELECT name FROM employees WHERE department = 'Finance';
+,Find employees who are older than 30 but earn less than 22000.,SELECT name FROM employees WHERE age > 30 AND salary < 22000;
+,How many employees are there in departments with a salary greater than 20000?,SELECT COUNT(*) FROM employees WHERE salary > 20000;
+,Find the employees whose name contains the letter 'A'.,SELECT name FROM employees WHERE name LIKE '%A%';
+,Show all employees in the IT department who are older than 30.,SELECT name FROM employees WHERE department = 'IT' AND age > 30;
+,What is the total number of employees in the company?,SELECT COUNT(*) FROM employees;
+,Find employees who earn between 22000 and 28000.,SELECT name FROM employees WHERE salary BETWEEN 22000 AND 28000;
+,Show the names and salaries of employees who earn less than the average salary.,"SELECT name, salary FROM employees WHERE salary < (SELECT AVG(salary) FROM employees);"
+,List employees who are in the Marketing department or earn more than 25000.,SELECT name FROM employees WHERE department = 'Marketing' OR salary > 25000;
+,Find all employees who are younger than 25 and work in the HR department.,SELECT name FROM employees WHERE department = 'HR' AND age < 25;
+,Show the department with the highest average salary.,"SELECT department, AVG(salary) FROM employees GROUP BY department ORDER BY AVG(salary) DESC LIMIT 1;"
+,List employees who have a salary higher than 20000 but less than 25000.,SELECT name FROM employees WHERE salary BETWEEN 20000 AND 25000;
+,Find employees who are aged over 30 and belong to the IT department.,SELECT name FROM employees WHERE department = 'IT' AND age > 30;
+,Show the total salary of employees in the IT department.,SELECT SUM(salary) FROM employees WHERE department = 'IT';
+,List employees who earn the highest salary in the company.,SELECT * FROM employees ORDER BY salary DESC LIMIT 1;
+,Show employees who earn more than the average salary but are less than 30 years old.,SELECT name FROM employees WHERE salary > (SELECT AVG(salary) FROM employees) AND age < 30;
+,Find employees in the IT department who are younger than 30.,SELECT name FROM employees WHERE department = 'IT' AND age < 30;
+,Show the name and department of the employee with the highest salary.,"SELECT name, department FROM employees ORDER BY salary DESC LIMIT 1;"
+,How many employees are in the IT department with a salary higher than 25000?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND salary > 25000;
+,List all employees aged between 25 and 30.,SELECT name FROM employees WHERE age BETWEEN 25 AND 30;
+,Find employees in the Marketing department who earn less than 23000.,SELECT name FROM employees WHERE department = 'Marketing' AND salary < 23000;
+,Show the employees who have the lowest salary in the company.,SELECT * FROM employees ORDER BY salary ASC LIMIT 1;
+,Find all employees who have a salary above 27000.,SELECT name FROM employees WHERE salary > 27000;
+,List employees in the HR department who are younger than 25.,SELECT name FROM employees WHERE department = 'HR' AND age < 25;
+,Show the employees in the Finance department with a salary greater than 19000.,SELECT name FROM employees WHERE department = 'Finance' AND salary > 19000;
+,List the names of employees who are over 30 years old.,SELECT name FROM employees WHERE age > 30;
+,Find the department with the most number of employees.,"SELECT department, COUNT(*) FROM employees GROUP BY department ORDER BY COUNT(*) DESC LIMIT 1;"
+,List all employees whose name ends with 'A'.,SELECT name FROM employees WHERE name LIKE '%A';
+,Show the names of employees who earn less than 20000 but are older than 25.,SELECT name FROM employees WHERE salary < 20000 AND age > 25;
+,Find employees in the IT department whose salary is above 25000.,SELECT name FROM employees WHERE department = 'IT' AND salary > 25000;
+,How many employees in the HR department have a salary below 25000?,SELECT COUNT(*) FROM employees WHERE department = 'HR' AND salary < 25000;
+,Find the employee(s) in the Marketing department who earns the lowest salary.,SELECT * FROM employees WHERE department = 'Marketing' ORDER BY salary ASC LIMIT 1;
+,Show the names of employees who earn less than the average salary in the company.,SELECT name FROM employees WHERE salary < (SELECT AVG(salary) FROM employees);
+,"Find employees who have the same salary as ""parimala"".",SELECT name FROM employees WHERE salary = (SELECT salary FROM employees WHERE name = 'parimala');
+,List employees who are older than 30 and work in the HR department.,SELECT name FROM employees WHERE department = 'HR' AND age > 30;
+,Show all employees who are younger than 30 and work in the IT department.,SELECT name FROM employees WHERE department = 'IT' AND age < 30;
+,List employees who are in the Finance department and have a salary greater than 22000.,SELECT name FROM employees WHERE department = 'Finance' AND salary > 22000;
+,Show the average salary for employees who are older than 30.,SELECT AVG(salary) FROM employees WHERE age > 30;
+,Find all employees whose salary is greater than 25000 and are in the IT department.,SELECT name FROM employees WHERE department = 'IT' AND salary > 25000;
+,How many employees are in the IT department?,SELECT COUNT(*) FROM employees WHERE department = 'IT';
+,How many employees are earning exactly 20000 in salary?,SELECT COUNT(*) FROM employees WHERE salary = 20000;
+,List employees who earn between 22000 and 30000.,SELECT name FROM employees WHERE salary BETWEEN 22000 AND 30000;
+,Show the names of all employees in the Marketing department.,SELECT name FROM employees WHERE department = 'Marketing';
+,How many employees in the IT department earn more than 28000?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND salary > 28000;
+,Find the employee(s) with the lowest salary in the company.,SELECT * FROM employees ORDER BY salary ASC LIMIT 1;
+,List employees who are 30 years or older.,SELECT name FROM employees WHERE age >= 30;
+,How many employees in the Finance department earn less than 20000?,SELECT COUNT(*) FROM employees WHERE department = 'Finance' AND salary < 20000;
+,Find the employee(s) who earn exactly 15000.,SELECT * FROM employees WHERE salary = 15000;
+,Show all employees who have a salary greater than 22000.,SELECT name FROM employees WHERE salary > 22000;
+,List the names of employees who work in departments other than IT.,SELECT name FROM employees WHERE department != 'IT';
+,How many employees have an age of 25 or younger and a salary greater than 22000?,SELECT COUNT(*) FROM employees WHERE age <= 25 AND salary > 22000;
+,Find the employee(s) who earn between 25000 and 27000.,SELECT * FROM employees WHERE salary BETWEEN 25000 AND 27000;
+,How many employees work in the IT department and earn more than 25000?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND salary > 25000;
+,List the names of employees who are older than 30 but earn less than 23000.,SELECT name FROM employees WHERE age > 30 AND salary < 23000;
+,How many employees earn between 15000 and 20000?,SELECT COUNT(*) FROM employees WHERE salary BETWEEN 15000 AND 20000;
+,Show the employees whose salary is higher than the average salary of the IT department.,SELECT name FROM employees WHERE salary > (SELECT AVG(salary) FROM employees WHERE department = 'IT');
+,List employees whose name contains the letter 'A'.,SELECT name FROM employees WHERE name LIKE '%A%';
+,How many employees have a salary of 27000 or more?,SELECT COUNT(*) FROM employees WHERE salary >= 27000;
+,Find employees who have a salary between 15000 and 23000 but are older than 25.,SELECT name FROM employees WHERE salary BETWEEN 15000 AND 23000 AND age > 25;
+,List the employees who are not in the HR department.,SELECT name FROM employees WHERE department != 'HR';
+,Show the names of employees who have the same salary as 'parimala'.,SELECT name FROM employees WHERE salary = (SELECT salary FROM employees WHERE name = 'parimala');
+,Find all employees in the Finance department who are younger than 30.,SELECT name FROM employees WHERE department = 'Finance' AND age < 30;
+,How many employees in the company are earning less than 20000?,SELECT COUNT(*) FROM employees WHERE salary < 20000;
+,List all employees in the Marketing department who are 28 years or older.,SELECT name FROM employees WHERE department = 'Marketing' AND age >= 28;
+,Show the average salary of employees who are 30 years or older.,SELECT AVG(salary) FROM employees WHERE age >= 30;
+,Find the name(s) of the youngest employee(s) in the company.,SELECT name FROM employees WHERE age = (SELECT MIN(age) FROM employees);
+,How many employees in the IT department are older than 30?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND age > 30;
+,List employees who are in the HR department and earn more than 20000.,SELECT name FROM employees WHERE department = 'HR' AND salary > 20000;
+,Find employees who have a salary greater than 25000 but are younger than 30.,SELECT name FROM employees WHERE salary > 25000 AND age < 30;
+,How many employees in the HR department have a salary greater than 22000?,SELECT COUNT(*) FROM employees WHERE department = 'HR' AND salary > 22000;
+,Show the employees who have a salary lower than the average salary of employees aged 30 or older.,SELECT name FROM employees WHERE salary < (SELECT AVG(salary) FROM employees WHERE age >= 30);
+,How many employees work in the Marketing department and earn less than 23000?,SELECT COUNT(*) FROM employees WHERE department = 'Marketing' AND salary < 23000;
+,Find the total salary of all employees in the IT department who are 30 years old or older.,SELECT SUM(salary) FROM employees WHERE department = 'IT' AND age >= 30;
+,How many employees have a salary greater than 27000 but are younger than 30?,SELECT COUNT(*) FROM employees WHERE salary > 27000 AND age < 30;
+,List all employees aged 25 to 30 who earn more than 26000.,SELECT name FROM employees WHERE age BETWEEN 25 AND 30 AND salary > 26000;
+,Show the names of employees in the Finance department who earn less than 20000.,SELECT name FROM employees WHERE department = 'Finance' AND salary < 20000;
+,How many employees work in the HR department and earn between 15000 and 25000?,SELECT COUNT(*) FROM employees WHERE department = 'HR' AND salary BETWEEN 15000 AND 25000;
+,Find employees who earn more than 30000.,SELECT name FROM employees WHERE salary > 30000;
+,How many employees in the IT department earn less than 25000?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND salary < 25000;
+,List all employees in the HR department who are older than 28.,SELECT name FROM employees WHERE department = 'HR' AND age > 28;
+,Show the average salary of employees in the Marketing department.,SELECT AVG(salary) FROM employees WHERE department = 'Marketing';
+,Find all employees who are younger than 30 and earn more than 27000.,SELECT name FROM employees WHERE age < 30 AND salary > 27000;
+,List the names of employees in the IT department whose salary is higher than 29000.,SELECT name FROM employees WHERE department = 'IT' AND salary > 29000;
+,Show all employees in the HR department who are younger than 25.,SELECT name FROM employees WHERE department = 'HR' AND age < 25;
+,How many employees in the company are aged between 28 and 35?,SELECT COUNT(*) FROM employees WHERE age BETWEEN 28 AND 35;
+,Find the employee(s) in the HR department with the highest salary.,SELECT * FROM employees WHERE department = 'HR' ORDER BY salary DESC LIMIT 1;
+,List all employees who are older than 30 and earn more than 25000.,SELECT name FROM employees WHERE age > 30 AND salary > 25000;
+,Show employees who work in the IT department and are older than 30 but earn less than 30000.,SELECT name FROM employees WHERE department = 'IT' AND age > 30 AND salary < 30000;
+,How many employees have a salary greater than 22000 but are aged 30 or younger?,SELECT COUNT(*) FROM employees WHERE salary > 22000 AND age <= 30;
+,Find the employee(s) who earn the lowest salary in the IT department.,SELECT * FROM employees WHERE department = 'IT' ORDER BY salary ASC LIMIT 1;
+,List employees who have the same salary as 'abinaya'.,SELECT name FROM employees WHERE salary = (SELECT salary FROM employees WHERE name = 'abinaya');
+,How many employees work in the Finance department and have an age greater than 30?,SELECT COUNT(*) FROM employees WHERE department = 'Finance' AND age > 30;
+,Show the average salary of employees who are younger than 30.,SELECT AVG(salary) FROM employees WHERE age < 30;
+,List all employees who are not in the Marketing department and earn more than 25000.,SELECT name FROM employees WHERE department != 'Marketing' AND salary > 25000;
+,How many employees in the company have a salary of 20000?,SELECT COUNT(*) FROM employees WHERE salary = 20000;
+,Show the total salary of employees in the Marketing department,SELECT SUM(salary) FROM employees WHERE department = 'Marketing';
+,How many employees are in the HR department?,SELECT COUNT(*) FROM employees WHERE department = 'HR';
+,List all employees who earn more than 25000 but less than 30000.,SELECT name FROM employees WHERE salary > 25000 AND salary < 30000;
+,Find all employees who are aged 28 or older.,SELECT name FROM employees WHERE age >= 28;
+,Show employees who work in departments other than Finance.,SELECT name FROM employees WHERE department != 'Finance';
+,How many employees are in the IT department?,SELECT COUNT(*) FROM employees WHERE department = 'IT';
+,List employees who earn less than 20000 and are in the HR department.,SELECT name FROM employees WHERE department = 'HR' AND salary < 20000;
+,Show the name and salary of the highest-paid employee.,"SELECT name, salary FROM employees ORDER BY salary DESC LIMIT 1;"
+,Find employees who earn more than 27000 and are aged 30 or older.,SELECT name FROM employees WHERE salary > 27000 AND age >= 30;
+,How many employees are younger than 30 and earn more than 25000?,SELECT COUNT(*) FROM employees WHERE age < 30 AND salary > 25000;
+,List employees in the Finance department who are younger than 30.,SELECT name FROM employees WHERE department = 'Finance' AND age < 30;
+,Show employees who are between 25 and 30 years old and earn more than 23000.,SELECT name FROM employees WHERE age BETWEEN 25 AND 30 AND salary > 23000;
+,Find the total number of employees in the company.,SELECT COUNT(*) FROM employees;
+,List employees who work in Marketing and earn between 25000 and 27000.,SELECT name FROM employees WHERE department = 'Marketing' AND salary BETWEEN 25000 AND 27000;
+,Show the average salary of employees in the HR department.,SELECT AVG(salary) FROM employees WHERE department = 'HR';
+,Find all employees in the IT department who earn more than 28000.,SELECT name FROM employees WHERE department = 'IT' AND salary > 28000;
+,How many employees work in the Finance department and earn less than 22000?,SELECT COUNT(*) FROM employees WHERE department = 'Finance' AND salary < 22000;
+,List employees who earn exactly 25000.,SELECT name FROM employees WHERE salary = 25000;
+,Show employees who are between 30 and 35 years old and earn less than 23000.,SELECT name FROM employees WHERE age BETWEEN 30 AND 35 AND salary < 23000;
+,Find all employees who earn exactly 20000.,SELECT name FROM employees WHERE salary = 20000;
+,List employees who are older than 30 and work in the IT department.,SELECT name FROM employees WHERE department = 'IT' AND age > 30;
+,Show employees who earn less than 20000 and are aged 24.,SELECT name FROM employees WHERE salary < 20000 AND age = 24;
+,How many employees are in the IT department and earn between 22000 and 30000?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND salary BETWEEN 22000 AND 30000;
+,Find employees who are younger than 25 and earn less than 20000.,SELECT name FROM employees WHERE age < 25 AND salary < 20000;
+,Show the names of employees who earn more than 30000.,SELECT name FROM employees WHERE salary > 30000;
+,How many employees earn between 15000 and 22000?,SELECT COUNT(*) FROM employees WHERE salary BETWEEN 15000 AND 22000;
+,List employees in the Marketing department who earn less than 27000.,SELECT name FROM employees WHERE department = 'Marketing' AND salary < 27000;
+,Show the names of employees who work in Finance or HR.,"SELECT name FROM employees WHERE department IN ('Finance', 'HR');"
+,How many employees are older than 30 and work in the IT department?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND age > 30;
+,Find employees who earn less than 18000 and are in the HR department.,SELECT name FROM employees WHERE department = 'HR' AND salary < 18000;
+,List all employees who earn more than 23000 and are older than 28.,SELECT name FROM employees WHERE salary > 23000 AND age > 28;
+,How many employees are in the IT department and have an age less than 30?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND age < 30;
+,Find the employees with the highest salary in each department.,"SELECT department, name, MAX(salary) FROM employees GROUP BY department;"
+,Show employees who are in the HR department but do not earn more than 20000.,SELECT name FROM employees WHERE department = 'HR' AND salary <= 20000;
+,How many employees earn less than 25000 and are aged 27 or older?,SELECT COUNT(*) FROM employees WHERE salary < 25000 AND age >= 27;
+,List employees in the HR department who are younger than 28.,SELECT name FROM employees WHERE department = 'HR' AND age < 28;
+,Find employees who are in the IT department and earn exactly 25000.,SELECT name FROM employees WHERE department = 'IT' AND salary = 25000;
+,Show the total salary of employees in the Marketing department.,SELECT SUM(salary) FROM employees WHERE department = 'Marketing';
+,How many employees earn more than 20000 but less than 27000?,SELECT COUNT(*) FROM employees WHERE salary > 20000 AND salary < 27000;
+,List employees who are in the HR or Finance department and earn less than 20000.,"SELECT name FROM employees WHERE department IN ('HR', 'Finance') AND salary < 20000;"
+,Show employees who are younger than 30 and earn more than 22000.,SELECT name FROM employees WHERE age < 30 AND salary > 22000;
+,How many employees have a salary between 27000 and 31000?,SELECT COUNT(*) FROM employees WHERE salary BETWEEN 27000 AND 31000;
+,Find the employee(s) who earn the least in the Marketing department.,SELECT * FROM employees WHERE department = 'Marketing' ORDER BY salary ASC LIMIT 1;
+,List employees who are older than 30 and earn between 25000 and 28000.,SELECT name FROM employees WHERE age > 30 AND salary BETWEEN 25000 AND 28000;
+,How many employees have a salary between 22000 and 25000?,SELECT COUNT(*) FROM employees WHERE salary BETWEEN 22000 AND 25000;
+,List employees who earn more than 27000 and work in the HR department.,SELECT name FROM employees WHERE department = 'HR' AND salary > 27000;
+,Show the names of employees who work in the Finance department and are younger than 30.,SELECT name FROM employees WHERE department = 'Finance' AND age < 30;
+,Find the employee(s) with the highest salary in the HR department.,SELECT * FROM employees WHERE department = 'HR' ORDER BY salary DESC LIMIT 1;
+,How many employees earn exactly 18000?,SELECT COUNT(*) FROM employees WHERE salary = 18000;
+,Show the average salary of employees who are between 25 and 30 years old.,SELECT AVG(salary) FROM employees WHERE age BETWEEN 25 AND 30;
+,List employees in the Marketing department who are 29 years old.,SELECT name FROM employees WHERE department = 'Marketing' AND age = 29;
+,Find employees who earn more than 28000 and are aged 29 or older.,SELECT name FROM employees WHERE salary > 28000 AND age >= 29;
+,How many employees earn less than 18000 and are in the IT department?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND salary < 18000;
+,Show employees who are in the HR department and earn between 20000 and 23000.,SELECT name FROM employees WHERE department = 'HR' AND salary BETWEEN 20000 AND 23000;
+,List employees in the IT department who are older than 25 and earn between 25000 and 30000.,SELECT name FROM employees WHERE department = 'IT' AND age > 25 AND salary BETWEEN 25000 AND 30000;
+,How many employees work in the Finance department and earn exactly 19000?,SELECT COUNT(*) FROM employees WHERE department = 'Finance' AND salary = 19000;
+,,
+,How many employees are in the HR department?,SELECT COUNT(*) FROM employees WHERE department = 'HR';
+,List all employees who earn more than 25000 but less than 30000.,SELECT name FROM employees WHERE salary > 25000 AND salary < 30000;
+,Find all employees who are aged 28 or older.,SELECT name FROM employees WHERE age >= 28;
+,Show employees who work in departments other than Finance.,SELECT name FROM employees WHERE department != 'Finance';
+,How many employees are in the IT department?,SELECT COUNT(*) FROM employees WHERE department = 'IT';
+,List employees who earn less than 20000 and are in the HR department.,SELECT name FROM employees WHERE department = 'HR' AND salary < 20000;
+,Show the name and salary of the highest-paid employee.,"SELECT name, salary FROM employees ORDER BY salary DESC LIMIT 1;"
+,Find employees who earn more than 27000 and are aged 30 or older.,SELECT name FROM employees WHERE salary > 27000 AND age >= 30;
+,How many employees are younger than 30 and earn more than 25000?,SELECT COUNT(*) FROM employees WHERE age < 30 AND salary > 25000;
+,List employees in the Finance department who are younger than 30.,SELECT name FROM employees WHERE department = 'Finance' AND age < 30;
+,Show employees who are between 25 and 30 years old and earn more than 23000.,SELECT name FROM employees WHERE age BETWEEN 25 AND 30 AND salary > 23000;
+,Find the total number of employees in the company.,SELECT COUNT(*) FROM employees;
+,List employees who work in Marketing and earn between 25000 and 27000.,SELECT name FROM employees WHERE department = 'Marketing' AND salary BETWEEN 25000 AND 27000;
+,Show the average salary of employees in the HR department.,SELECT AVG(salary) FROM employees WHERE department = 'HR';
+,Find all employees in the IT department who earn more than 28000.,SELECT name FROM employees WHERE department = 'IT' AND salary > 28000;
+,How many employees work in the Finance department and earn less than 22000?,SELECT COUNT(*) FROM employees WHERE department = 'Finance' AND salary < 22000;
+,List employees who earn exactly 25000.,SELECT name FROM employees WHERE salary = 25000;
+,Show employees who are between 30 and 35 years old and earn less than 23000.,SELECT name FROM employees WHERE age BETWEEN 30 AND 35 AND salary < 23000;
+,Find all employees who earn exactly 20000.,SELECT name FROM employees WHERE salary = 20000;
+,List employees who are older than 30 and work in the IT department.,SELECT name FROM employees WHERE department = 'IT' AND age > 30;
+,Show employees who earn less than 20000 and are aged 24.,SELECT name FROM employees WHERE salary < 20000 AND age = 24;
+,How many employees are in the IT department and earn between 22000 and 30000?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND salary BETWEEN 22000 AND 30000;
+,Find employees who are younger than 25 and earn less than 20000.,SELECT name FROM employees WHERE age < 25 AND salary < 20000;
+,Show the names of employees who earn more than 30000.,SELECT name FROM employees WHERE salary > 30000;
+,How many employees earn between 15000 and 22000?,SELECT COUNT(*) FROM employees WHERE salary BETWEEN 15000 AND 22000;
+,List employees in the Marketing department who earn less than 27000.,SELECT name FROM employees WHERE department = 'Marketing' AND salary < 27000;
+,Show the names of employees who work in Finance or HR.,"SELECT name FROM employees WHERE department IN ('Finance', 'HR');"
+,How many employees are older than 30 and work in the IT department?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND age > 30;
+,Find employees who earn less than 18000 and are in the HR department.,SELECT name FROM employees WHERE department = 'HR' AND salary < 18000;
+,List all employees who earn more than 23000 and are older than 28.,SELECT name FROM employees WHERE salary > 23000 AND age > 28;
+,How many employees are in the IT department and have an age less than 30?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND age < 30;
+,Find the employees with the highest salary in each department.,"SELECT department, name, MAX(salary) FROM employees GROUP BY department;"
+,Show employees who are in the HR department but do not earn more than 20000.,SELECT name FROM employees WHERE department = 'HR' AND salary <= 20000;
+,How many employees earn less than 25000 and are aged 27 or older?,SELECT COUNT(*) FROM employees WHERE salary < 25000 AND age >= 27;
+,List employees in the HR department who are younger than 28.,SELECT name FROM employees WHERE department = 'HR' AND age < 28;
+,Find employees who are in the IT department and earn exactly 25000.,SELECT name FROM employees WHERE department = 'IT' AND salary = 25000;
+,Show the total salary of employees in the Marketing department.,SELECT SUM(salary) FROM employees WHERE department = 'Marketing';
+,How many employees earn more than 20000 but less than 27000?,SELECT COUNT(*) FROM employees WHERE salary > 20000 AND salary < 27000;
+,List employees who are in the HR or Finance department and earn less than 20000.,"SELECT name FROM employees WHERE department IN ('HR', 'Finance') AND salary < 20000;"
+,Show employees who are younger than 30 and earn more than 22000.,SELECT name FROM employees WHERE age < 30 AND salary > 22000;
+,How many employees have a salary between 27000 and 31000?,SELECT COUNT(*) FROM employees WHERE salary BETWEEN 27000 AND 31000;
+,Find the employee(s) who earn the least in the Marketing department.,SELECT * FROM employees WHERE department = 'Marketing' ORDER BY salary ASC LIMIT 1;
+,List employees who are older than 30 and earn between 25000 and 28000.,SELECT name FROM employees WHERE age > 30 AND salary BETWEEN 25000 AND 28000;
+,How many employees have a salary between 22000 and 25000?,SELECT COUNT(*) FROM employees WHERE salary BETWEEN 22000 AND 25000;
+,List employees who earn more than 27000 and work in the HR department.,SELECT name FROM employees WHERE department = 'HR' AND salary > 27000;
+,Show the names of employees who work in the Finance department and are younger than 30.,SELECT name FROM employees WHERE department = 'Finance' AND age < 30;
+,Find the employee(s) with the highest salary in the HR department.,SELECT * FROM employees WHERE department = 'HR' ORDER BY salary DESC LIMIT 1;
+,How many employees earn exactly 18000?,SELECT COUNT(*) FROM employees WHERE salary = 18000;
+,Show the average salary of employees who are between 25 and 30 years old.,SELECT AVG(salary) FROM employees WHERE age BETWEEN 25 AND 30;
+,List employees in the Marketing department who are 29 years old.,SELECT name FROM employees WHERE department = 'Marketing' AND age = 29;
+,Find employees who earn more than 28000 and are aged 29 or older.,SELECT name FROM employees WHERE salary > 28000 AND age >= 29;
+,How many employees earn less than 18000 and are in the IT department?,SELECT COUNT(*) FROM employees WHERE department = 'IT' AND salary < 18000;
