@@ -157,6 +157,17 @@ Deployment Ready: CORS-enabled, modularized, API-first
 
 🌐 Deploy to cloud using Docker & Gunicorn.
 
+# Demo Input
+
+![Screenshot 2025-05-08 202159](https://github.com/user-attachments/assets/43d452f6-cb57-486a-9116-3f8bb9be1283)
+
+![Screenshot 2025-05-08 202039](https://github.com/user-attachments/assets/75dfe634-f34b-4e1e-a3ca-9589e7ce6fa9)
+
+# Demo Output
+
+![Screenshot 2025-05-08 202123](https://github.com/user-attachments/assets/462df355-08f7-4b72-adce-741eb3f86dc3)
+
+
 ## 👩‍💻 Author
 Parimala Murugavel
 📍 Coimbatore, Tamil Nadu
